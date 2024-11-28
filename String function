@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    // Declare strings
+    char str1[] = "Hello";
+    char str2[] = "World";
+    char str3[50];
+
+    // 1. strlen() - Find the length of a string
+    printf("Length of str1: %d\n", (int)strlen(str1));
+    printf("Length of str2: %d\n", (int)strlen(str2));
+
+    // 2. strcpy() - Copy str2 into str3
+    strcpy(str3, str2);
+    printf("str3 after strcpy: %s\n", str3);
+
+    // 3. strcat() - Concatenate str2 to str1
+    strcat(str1, str2);
+    printf("str1 after strcat: %s\n", str1);
+
+    // 4. strcmp() - Compare str1 and str2
+    int result = strcmp(str1, str2);
+    if (result == 0) {
+        printf("str1 and str2 are the same.\n");
+    } else if (result > 0) {
+        printf("str1 is greater than str2.\n");
+    } else {
+        printf("str1 is less than str2.\n");
+    }
+
+    return 0;
+}
