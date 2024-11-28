@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    int num = 10;
+    int *ptr = &num;  // pointer ptr holds the address of num
+    printf("Value of num: %d\n", num);
+    printf("Value of num using pointer: %d\n", *ptr);  // dereferencing ptr
+    return 0;
+}
